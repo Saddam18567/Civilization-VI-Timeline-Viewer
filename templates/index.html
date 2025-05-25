@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CIVILIZATION VI Timeline Viewer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>
+    <img src="static/res/logo.png" alt="Civilization VI" class="logo">
+    </h1>
+    <h2>TIMELINE VIEWER</h2>
+    <div class="input-box"><input type="file" id="jsonFile" accept=".json"></div>
+    <div style="color:white;"><p>Exported files are usually stored at: C:\Users\[Username]\Documents\My Games\Sid Meier's Civilization VI\GameSummary</p></div>
+    <div id="summary"></div>
+    <div id="timeline"></div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'Elan';
+    src: url('res/elan.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: sans-serif;
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+     background: url('res/bg.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+h1, h2 {
+    font-family: 'Elan', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #75c5ff;
+    gap: 0.5rem; /* spacing between image and text */
+}
+
+h1 .logo {
+    height: 1em; /* adjust as needed */
+    vertical-align: top;
+}
+
+h2 {
+    letter-spacing:8px;
+}
+
+.input-box {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+table, th, td {
+    border: 1px solid #aaa;
+}
+
+th, td {
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.moment {
+    background: #f4f4f4;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-left: 5px solid #3f51b5;
+}
+
+.icon {
+    height: 1em;
+    vertical-align: middle;
+}
+
+a {
+    display: inline-block;
+    color: white;
+    background: linear-gradient(180deg,#3ac03c, #013715);
+    border: 2px solid gold;
+    border-radius: 50px;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+a:hover,
+a:focus {
+    color: rgb(255, 255, 255);
+    background: linear-gradient(180deg, #3e8da6, navy);
+    border-color: gold;
+}
+
+a:active {
+    transform: scale(0.97); /* slight press effect */
+}
+
+@media (max-width: 786px) {
+    a {
+        font-size: 10px; /* smaller font size for mobile */
+        padding: 0.4em 0.8em; /* adjust padding for smaller screens */
+    }
+}
+
+.citystates {
+    color: white;
+    margin-top: 1rem;
+    padding: 0.5rem;
+}
